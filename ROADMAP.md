@@ -117,9 +117,11 @@ mode and the widescreen possible, and it is the part most worth doing carefully.
 - [x] `rom/`, `build/`, `work/` are ignored and **absent** from the repository; no game data, keys or dumps
       anywhere (`.github/workflows/check.yml` fails a push that tracks one); no screenshots.
 - [x] `PROGRESS.md` records how each finding was made (a RAM diff, a watch, a trace), not the data.
-- [ ] `make check`, `make check-toolkit`, `make check-common` all pass (the CI runs the last two).
+- [x] `make check`, `make check-toolkit`, `make check-common` all pass (the CI runs the last two).
 - [x] `LICENSE` (GPL-3.0-only) and `THIRD_PARTY_NOTICES.md` (the cipher is MAME's, BSD-3-Clause); the
       release archives carry them and the licences of what they ship.
-- [ ] Repo description set (see README's title line / the About field).
-- [ ] First commit made; the repository builds from a fresh clone with the player's own ROM set
-      (`make`, `make explore`, `make launcher`).
+- [x] Repo description set (see README's title line / the About field).
+- [x] First commit made and pushed; only source, docs and tooling are tracked (no ROM, key or derived
+      data — `rom/`, `work/` and `build/` are ignored).
+- [ ] The repository builds from a fresh clone with the player's own ROM set (`make`, `make explore`,
+      `make launcher`).
